@@ -16,11 +16,11 @@ This example demonstrates the propagation from one source to one receiver throug
   - "solver_frame_i.dat" (where i=1,n, depending on the number of frames selected in "parfile")
   - "solver.gif", resulting from running the plot.sh script based on GMT (automatically executed from Fortran)
 
-## Execution
+## Compilation and Execution
+- Compilation, type in terminal:
+  	make
 - To execute, type in the terminal:
-
 	solver parfile
-
 - An example "parfile" named "parfile_example" is included in this folder.
 
 ## Defaults: if no "parfile" is provided, default parameters will be used. These are the default parameters or the default "parfile" used by the code:
