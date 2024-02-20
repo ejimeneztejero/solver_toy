@@ -27,10 +27,10 @@ This example demonstrates the propagation from one source to one receiver throug
 - test_name: "default"
 - nxmodel: 100
 - nzmodel: 100
-- shotx: nxmodel/2
-- shotz: nzmodel/2
-- recx: nxmodel/2
-- recz: nzmodel/2
+- shotx: 50
+- shotz: 50
+- recx: 50
+- recz: 50
 - dmode: 0.025
 - model: 1
 - v1: 1.5
