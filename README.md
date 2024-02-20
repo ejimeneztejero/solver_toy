@@ -23,7 +23,8 @@ This example demonstrates the propagation from one source to one receiver throug
 	solver parfile
 - An example "parfile" named "parfile_example" is included in this folder.
 
-## Defaults: if no "parfile" is provided, default parameters will be used. These are the default parameters or the default "parfile" used by the code:
+## Defaults
+- If no "parfile" is provided, default parameters will be used. These are the default parameters or the default "parfile" used by the code:
 - test_name: "default"
 - nxmodel: 100
 - nzmodel: 100
