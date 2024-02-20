@@ -23,28 +23,25 @@ This example demonstrates the propagation from one source to one receiver throug
 
 - An example "parfile" named "parfile_example" is included in this folder.
 
-## Defaults
-- If no "parfile" is provided, default parameters will be used. These are the default parameters or the default "parfile" used by the code:
-
-###test_name: "default"
-###nxmodel: 100
-###nzmodel: 100
-###shotx: nxmodel/2
-###shotz: nzmodel/2
-###recx: nxmodel/2
-###recz: nzmodel/2
-###dmode: 0.025
-###model: 1
-###v1: 1.5
-###v2: 1.5
-###time: 5
-###freq: 20
-###frames: 50
-###PML: 50
-###accuracy: 3
-###cpt_model: "gray"
-###cpt_solver: "gray"
-
+## Defaults: if no "parfile" is provided, default parameters will be used. These are the default parameters or the default "parfile" used by the code:
+- test_name: "default"
+- nxmodel: 100
+- nzmodel: 100
+- shotx: nxmodel/2
+- shotz: nzmodel/2
+- recx: nxmodel/2
+- recz: nzmodel/2
+- dmode: 0.025
+- model: 1
+- v1: 1.5
+- v2: 1.5
+- time: 5
+- freq: 20
+- frames: 50
+- PML: 50
+- accuracy: 3
+- cpt_model: "gray"
+- cpt_solver: "gray"
 
 ## Meaning of the different parameters that can be included by the user in the parfile:
 - "test_name": name added to the output files
