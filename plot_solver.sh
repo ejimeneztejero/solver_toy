@@ -40,7 +40,7 @@ modelgrd=$model.grd
 pal=$folder/palet_model.cpt
 
 pal2=$folder/palet_solver.cpt
-gmt makecpt -C$cpt_solver -T-0.6/0.6/0.001 -Z > $pal2
+gmt makecpt -C$cpt_solver -T-0.1/0.1/0.0001 -Z > $pal2
 
 num=1
 while [[ $num -le $frames ]]; do
@@ -56,18 +56,21 @@ fi
 
 
 gmt psbasemap -Bxf500a1000 -Byf1a2 -By+l"Depth (km)" -BWeS -Jx$SCALE -R$RANGE -V -K > $psfile
-gmt psbasemap -Bxf10a5 -Bx+l"Distance (km)" -BN -Jx$SCALE -R$RANGE -V -O -K >> $psfile
+gmt psbasemap -Bxf10a5 -Bx+l"Distance (km)" -BN -Jx$SCALE -R$RANGE -O -V -K >> $psfile
 
 if [ $homog -eq 0 ]
 then
+	#echo "PLOT Solver $model2"
+	gmt xyz2grd $model2 -G$modelgrd2 -R$RANGE2 -I$dx/$dz -V
+	gmt grdimage $modelgrd2 -C$pal2 -R$RANGE2 -Jx$SCALE2 -O -V -K >> $psfile
+
 	#echo "PLOT Model $model"
 	gmt xyz2grd $model -G$modelgrd -R$RANGE -I$dx/$dz -V
 	gmt grd2cpt $modelgrd -C$cpt_model -I > $pal
-	gmt grdimage $modelgrd -C$pal -Jx$SCALE -R$RANGE -V -O -K >> $psfile
-	#echo "PLOT Solver $model2"
-	gmt xyz2grd $model2 -G$modelgrd2 -R$RANGE2 -I$dx/$dz -V
-	gmt grdimage $modelgrd2 -C$pal2 -R$RANGE2 -Jx$SCALE2 -t40 -O -V >> $psfile
+	gmt grdimage $modelgrd -C$pal -R$RANGE -Jx$SCALE -t90 -O -V >> $psfile
+
 	gmt psconvert $psfile -Tj -E600 -A -V -P
+
 fi
 
 if [ $homog -eq 1 ]
@@ -75,6 +78,7 @@ then
 	#echo "PLOT Solver $model2"
 	gmt xyz2grd $model2 -G$modelgrd2 -R$RANGE2 -I$dx/$dz -V
 	gmt grdimage $modelgrd2 -C$pal2 -R$RANGE2 -Jx$SCALE2 -O -V >> $psfile
+
 	gmt psconvert $psfile -Tj -E600 -A -V -P
 fi
 
