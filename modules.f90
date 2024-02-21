@@ -86,7 +86,7 @@ implicit none
   PML= 50
   accuracy=3
   cpt_model="gray"
-  cpt_solver="gray"
+  cpt_solver="polar"
   test="default"
 
 
