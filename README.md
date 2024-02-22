@@ -17,28 +17,7 @@ This example demonstrates the propagation from one source to one receiver throug
 - An example for the "parfile" is included in this folder: [parfile_example](parfile_example)
 - The video result of running parfile_example is [test_solver.gif](test_solver.gif) given in this folder
 
-## Defaults
-- If no "parfile" is provided, default parameters will be used. This example shows a simple propagation of one source in the middle of an homogeneous model. These are the default parameters or the default "parfile" used by the code:
-- test_name: "default"
-- nxmodel: 100
-- nzmodel: 100
-- shotx: 50
-- shotz: 50
-- recx: 50
-- recz: 50
-- dmode: 0.025
-- model: 1
-- v1: 1.5
-- v2: 1.5
-- time: 5
-- freq: 20
-- frames: 50
-- PML: 50
-- accuracy: 3
-- cpt_model: "gray"
-- cpt_solver: "polar"
-
-## Meaning of the different parameters that can be included by the user in the parfile:
+## parfile content
 - "test_name": name added to the output files
 - "output_folder": name of the folder to store results (path must be included if folder is located outside the location of "parfile")
 - "nxmodel": number of points in X (length)
@@ -59,6 +38,27 @@ This example demonstrates the propagation from one source to one receiver throug
 - "accuracy": number referring to the accuracy for the finite difference (options: 3 or 4)
 - "cpt_model": name for the palette in GMT used for the velocity model
 - "cpt_solver": name for the palette in GMT used for solver propagation
+  
+## Default values for parameters (if not given)
+- If no "parfile" is provided, default parameters will be used. This example shows a simple propagation of one source in the middle of an homogeneous model. These are the default parameters or the default "parfile" used by the code:
+- test_name: "default"
+- nxmodel: 100
+- nzmodel: 100
+- shotx: 50
+- shotz: 50
+- recx: 50
+- recz: 50
+- dmode: 0.025
+- model: 1
+- v1: 1.5
+- v2: 1.5
+- time: 5
+- freq: 20
+- frames: 50
+- PML: 50
+- accuracy: 3
+- cpt_model: "gray"
+- cpt_solver: "polar"
   
 ## Outputs
 - In the "output" folder, data generated after running the program will be stored. Outputs include:
