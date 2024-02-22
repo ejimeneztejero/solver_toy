@@ -14,7 +14,9 @@ This example demonstrates the propagation from one source to one receiver throug
   	make
 - To execute, type in the terminal:
 	solver parfile
-- An example for the "parfile" is included in this folder: [parfile_example](parfile_example). The video result of running "parfile_example" is given in this folder, [test_solver.gif](test_solver.gif) 
+- An example for the "parfile" is included in this folder: [parfile_example](parfile_example).
+- The video result of running "parfile_example" is given in this folder, [test_solver.gif](test_solver.gif)
+  ![](https://github.com/ejimeneztejero/solver_toy/test_solver.gif)
 
 ## parfile content
 - "test_name": name added to the output files
