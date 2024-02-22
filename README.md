@@ -15,7 +15,8 @@ This example demonstrates the propagation from one source to one receiver throug
 - To execute, type in the terminal:
 	solver parfile
 - An example for the "parfile" is included in this folder: [parfile_example](parfile_example).
-- The video result of running "parfile_example" is given in this folder, ![test_solver.gif](test_solver.gif)
+- The video result of running "parfile_example" is given in this folder, [test_solver.gif](test_solver.gif)
+![test_solver.gif](test_solver.gif)
 
 
 ## parfile content
