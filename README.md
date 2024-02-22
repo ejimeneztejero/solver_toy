@@ -13,16 +13,17 @@ This example demonstrates the propagation from one source to one receiver throug
 - In the "output" folder, data generated after running the program will be stored. Outputs include:
   - "%_model.dat"
   - "%_signal.dat"
-  - "$_solver_frame_i.dat" (where i=1,n, depending on the number of frames selected in "parfile")
+  - "%_solver_frame_i.dat" (where i=1,n, depending on the number of frames selected in "parfile")
   - "%_solver.gif", resulting from running the plot.sh script based on GMT (automatically executed from Fortran)
-
+  - Symbol "%" refers to the test name provided in parfile by the user
+    
 ## Compilation and Execution
 - Compilation, type in terminal:
   	make
 - To execute, type in the terminal:
 	solver parfile
-- An example "parfile" named "parfile_example" is included in this folder
-- The video result of running parfile_example is "test_solver.gif" given in this folder
+- An example for the "parfile" is included in this folder: [parfile_example](parfile_example)
+- The video result of running parfile_example is [test_solver.gif](test_solver.gif) given in this folder
 
 ## Defaults
 - If no "parfile" is provided, default parameters will be used. These are the default parameters or the default "parfile" used by the code:
