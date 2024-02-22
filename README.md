@@ -17,6 +17,10 @@ This example demonstrates the propagation from one source to one receiver throug
 - An example for the "parfile" is included in this folder: [parfile_example](parfile_example).
 - The video result of running "parfile_example" is given in this folder, [test_solver.gif](test_solver.gif)
 
+![test_solver](https://github.com/ejimeneztejero/solver_toy/assets/88611405/540066ae-3e91-48d8-a241-b6d47534d68d)
+
+
+
 ## parfile content
 - "test_name": name added to the output files
 - "output_folder": name of the folder to store results (path must be included if folder is located outside the location of "parfile")
