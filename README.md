@@ -1,5 +1,5 @@
 # solver_toy
-An acoustic solver code to understand 2D acoustic propagation with finite differences in toy models. The equation for the solver is shown in the file "solver.pdf".
+An acoustic solver code to understand 2D acoustic propagation with finite differences in toy models. The equation for the solver is shown in the file [solver.pdf](solver.pdf).
 
 # README
 
